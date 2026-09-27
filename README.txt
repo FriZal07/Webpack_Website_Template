@@ -52,4 +52,5 @@ Because the dist folder is intentionally ignored by Git (via .gitignore), standa
 
 1. Make sure all local changes in src are committed to your main branch.
 2. Run "npm run build" to generate fresh files in dist/.
-3. Run "npm run deploy" to isolate the built files and force-update the remote gh-pages branch.
+3. Run "npm run gitadd" to forcefully add the dist file, then commit the file or use "gitqdcommit" for a quick commit"
+4. Run "npm run deploy" to isolate the built files and force-update the remote gh-pages branch.
