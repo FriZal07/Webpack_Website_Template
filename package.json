@@ -29,6 +29,6 @@
     "dev": "webpack serve --config webpack.dev.js",
     "gitadd": "git add dist -f",
     "gitqdcommit": "git commit -m 'quick deploy'",
-    "deploy": "git add dist -f && git commit -m \"temp deploy\" && git push origin $(git subtree split --prefix dist HEAD):gh-pages --force && git reset HEAD~1"
+    "deploy": "git add dist -f && git commit --allow-empty -m \"temp deploy\" && git push origin $(git subtree split --prefix dist HEAD):gh-pages --force && git reset HEAD~1"
   }
 }
