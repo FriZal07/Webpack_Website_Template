@@ -32,6 +32,6 @@
     "dev": "webpack serve --config webpack.dev.js",
     "gitadd": "git add dist -f",
     "gitqdcommit": "git commit -m 'quick deploy'",
-    "deploy": "git push origin $(git subtree split --prefix dist HEAD):gh-pages --force && git reset HEAD~1"
+    "deploy": "git push origin $(git subtree split --prefix dist HEAD):refs/heads/gh-pages --force"
   }
 }
